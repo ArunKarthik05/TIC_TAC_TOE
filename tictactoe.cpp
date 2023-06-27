@@ -39,6 +39,7 @@ int main()
 	int x_row[10]={0},x_col[10]={0},x_leftd[10]={0},x_rightd[10]={0};
 	int y_row[10]={0},y_col[10]={0},y_leftd[10]={0},y_rightd[10]={0};
 	//display(board,row,col);
+	cout<<"REFER THIS FOR BOX VALUES OF X AND Y...";
 		for(int i=0;i<row;i++)
 		{
 			cout<<"\n";
@@ -47,12 +48,12 @@ int main()
 				//SPACES
 				if((i%2==0) && (j%2==0))
 				{
-					cout<<" ";
+					cout<<i<<","<<j;
 				}
 				//LOWER_DASH
 				if((i%2==1))
 				{
-					cout<<"_";
+					cout<<"__";
 				}
 				//VERTICAL_DASH
 				if((i%2==0) && (j%2==1))
@@ -61,6 +62,7 @@ int main()
 				}
 			}	
 		}
+		cout<<"\n************************************************************************************************";
 		cout<<"\nPLAYER 1:X";
 		cout<<"\nPLAYER 2:O";
 		cout<<"\nLETS BEGIN.....";
